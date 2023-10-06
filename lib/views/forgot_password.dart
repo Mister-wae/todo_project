@@ -4,11 +4,10 @@ import 'package:todo_application/todo_provider.dart';
 import 'package:todo_application/widgets.dart';
 
 class ForgotPassword extends StatelessWidget {
-  const ForgotPassword({super.key});
-
+  ForgotPassword({super.key});
+  final TextEditingController emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    final TextEditingController emailController = TextEditingController();
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 2, 25, 45),
       body: Center(
