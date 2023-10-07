@@ -67,9 +67,7 @@ class SignInPage extends StatelessWidget {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePage(
-                              username: emailController.text,
-                            ),
+                            builder: (context) => SignUpPage(),
                           ),
                           (route) => false);
                     },
